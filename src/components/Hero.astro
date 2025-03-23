@@ -1,0 +1,191 @@
+---
+const EVENT_LOCATION = "Universidad Ucatec,";
+const EVENT_CITY = "Cochabamba -  Bolivia";
+const EVENT_COST = "Costo de 15.BS";
+const EVENT_DATE = "29 de Marzo, 2025";
+const APPLY_LABEL = "APLICAR AL EVENTO";
+const EVENT_NAME = "React & Beyond";
+const APPLY_LINK = "https://forms.gle/VPS9sam6y9vUBtLN9";
+---
+
+<article
+  id="home"
+  class="h-dvh min-h-[400px] p-4 md:p-8 bg-cover bg-center bg-no-repeat relative background flex justify-center items-center"
+>
+  <section
+    class="relative bg-no-repeat bg-cover bg-center flex flex-col justify-center mt-20 md:mt-0"
+  >
+    <header
+      class="relative h-full items-center justify-end flex flex-col pb-10 md:pb-20"
+    >
+      <h1
+        class="text-[clamp(2rem,5vw,10rem)] flex justify-center items-center text-white font-bold"
+      >
+        {EVENT_NAME}
+      </h1>
+    </header>
+
+    <section
+      class="relative text-white text-center pb-10 flex flex-col gap-13 md:gap-20 justify-end md:justify-center items-center"
+    >
+      <section class="flex flex-col gap-4">
+        <p class="text-[clamp(1.5rem,4vw,3rem)] font-semibold">
+          <time datetime="2025-02-22">{EVENT_DATE}</time>
+        </p>
+
+        <section class="flex items-center gap-2 justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="31"
+            viewBox="0 0 25 31"
+            fill="none"
+          >
+            <path
+              d="M12.5 0.916504C6.06733 0.916504 0.833371 6.15046 0.833371 12.5759C0.791079 21.9748 12.0567 29.7682 12.5 30.0832C12.5 30.0832 24.209 21.9748 24.1667 12.5832C24.1667 6.15046 18.9327 0.916504 12.5 0.916504ZM12.5 18.4165C9.27712 18.4165 6.6667 15.8061 6.6667 12.5832C6.6667 9.36025 9.27712 6.74984 12.5 6.74984C15.723 6.74984 18.3334 9.36025 18.3334 12.5832C18.3334 15.8061 15.723 18.4165 12.5 18.4165Z"
+              fill="white"></path>
+          </svg>
+
+          <section class="md:flex md:gap-2">
+            <p class="text-xl">{EVENT_LOCATION}</p>
+            <p class="text-xl">{EVENT_CITY}</p>
+          </section>
+        </section>
+
+        <section class="flex items-center gap-2 justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_4521_12653)">
+              <path
+                d="M6.23477 17.461L11.9024 23.1286L22.3009 12.7301L16.6336 7.06248L6.23477 17.461ZM28.8914 9.67719L26.48 7.26545C26.0208 7.51566 25.4945 7.65831 24.9351 7.65831C23.1508 7.65831 21.7044 6.21197 21.7044 4.42798C21.7044 3.86853 21.8474 3.34227 22.0976 2.88303L19.6859 0.471289C19.0575 -0.157096 18.0302 -0.157096 17.4018 0.471289L-0.164936 18.039C-0.793003 18.667 -0.793003 19.6947 -0.164936 20.3227L2.24712 22.7345C2.70604 22.4843 3.23262 22.3419 3.79208 22.3419C5.57639 22.3419 7.02241 23.7876 7.02241 25.5719C7.02241 26.1314 6.87975 26.6576 6.62923 27.1172L9.04096 29.5289C9.66935 30.157 10.697 30.157 11.3254 29.5289L28.8921 11.9616C29.5198 11.3332 29.5198 10.3056 28.8914 9.67719ZM11.9024 25.721L3.64304 17.461L16.6343 4.47043L24.8933 12.7301L11.9024 25.721Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.7"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_4521_12653">
+                <rect width="30" height="30" fill="white"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+
+          <p class="text-xl">{EVENT_COST}</p>
+        </section>
+      </section>
+
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        class="border-2 rounded-4xl py-3 px-10 bg-[#17171799] hover:bg-white hover:text-[#087EA6] hover:font-bold hover:border-[#087EA6] transition-all duration-300 ease-in-out"
+        href={APPLY_LINK}
+      >
+        {APPLY_LABEL}
+      </a>
+    </section>
+  </section>
+</article>
+
+<style>
+  .background {
+    background-image:
+      radial-gradient(
+        circle at 29% 55%,
+        hsla(329, 0%, 99%, 0.05) 0%,
+        hsla(329, 0%, 99%, 0.05) 4%,
+        transparent 4%,
+        transparent 44%,
+        transparent 44%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 85% 89%,
+        hsla(329, 0%, 99%, 0.05) 0%,
+        hsla(329, 0%, 99%, 0.05) 51%,
+        transparent 51%,
+        transparent 52%,
+        transparent 52%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 6% 90%,
+        hsla(329, 0%, 99%, 0.05) 0%,
+        hsla(329, 0%, 99%, 0.05) 53%,
+        transparent 53%,
+        transparent 64%,
+        transparent 64%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 35% 75%,
+        hsla(329, 0%, 99%, 0.05) 0%,
+        hsla(329, 0%, 99%, 0.05) 6%,
+        transparent 6%,
+        transparent 98%,
+        transparent 98%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 56% 75%,
+        hsla(329, 0%, 99%, 0.05) 0%,
+        hsla(329, 0%, 99%, 0.05) 16%,
+        transparent 16%,
+        transparent 23%,
+        transparent 23%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 42% 0%,
+        hsla(329, 0%, 99%, 0.05) 0%,
+        hsla(329, 0%, 99%, 0.05) 3%,
+        transparent 3%,
+        transparent 26%,
+        transparent 26%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 29% 28%,
+        hsla(329, 0%, 99%, 0.05) 0%,
+        hsla(329, 0%, 99%, 0.05) 51%,
+        transparent 51%,
+        transparent 75%,
+        transparent 75%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 77% 21%,
+        hsla(329, 0%, 99%, 0.05) 0%,
+        hsla(329, 0%, 99%, 0.05) 35%,
+        transparent 35%,
+        transparent 55%,
+        transparent 55%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 65% 91%,
+        hsla(329, 0%, 99%, 0.05) 0%,
+        hsla(329, 0%, 99%, 0.05) 46%,
+        transparent 46%,
+        transparent 76%,
+        transparent 76%,
+        transparent 100%
+      ),
+      linear-gradient(45deg, #61dbfb, #004dcf);
+  }
+
+  a {
+    transition:
+      background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out,
+      border-color 0.3s ease-in-out,
+      transform 0.2s ease;
+  }
+
+  a:hover {
+    transform: scale(1.05);
+  }
+</style>
