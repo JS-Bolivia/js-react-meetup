@@ -1,19 +1,14 @@
 ---
-import AboutUs from "../components/AboutUs.astro";
-import Hero from "../components/Hero.astro";
-import Layout from "../layouts/Layout.astro";
+import AboutUs from "@components/AboutUs.astro";
+import Faqs from "@/components/Faqs.astro";
+import Hero from "@components/Hero.astro";
+import Layout from "@layouts/Layout.astro";
 
 import "../styles/global.css";
 ---
 
 <Layout>
   <Hero />
-
   <AboutUs />
+  <Faqs />
 </Layout>
-
-<style>
-  Layout {
-    background-color: black;
-  }
-</style>

@@ -1,0 +1,100 @@
+---
+interface Faq {
+  question: string;
+  answer: string;
+}
+
+const faqs: Faq[] = [
+  {
+    question: "¿Necesito experiencia previa en React?",
+    answer:
+      "No es obligatorio, pero se recomienda conocer JavaScript y los fundamentos de React para aprovechar mejor las charlas.",
+  },
+  {
+    question: "¿Habrá certificados de participación?",
+    answer:
+      "No en este evento, pero sí contenido valioso y acceso a la comunidad para seguir aprendiendo.",
+  },
+  {
+    question: "¿Recibiré algún certificado de participación?",
+    answer:
+      "No en este evento, pero sí contenido valioso y acceso a la comunidad para seguir aprendiendo.",
+  },
+  {
+    question: "¿El evento es adecuado para principiantes?",
+    answer:
+      "Sí, pero es ideal para quienes ya tienen una base en JavaScript y quieren profundizar en React.",
+  },
+  {
+    question: "¿El evento es adecuado para niños o adolescentes?",
+    answer:
+      "El taller está principalmente dirigido a personas con nociones básicas de programación y principiantes en JavaScript, por lo cual es totalmente adecuado para adolescentes interesados en aprender.",
+  },
+  {
+    question: "¿Qué pasa si no puedo asistir al evento después de inscribirme?",
+    answer:
+      "Si no puedes asistir, por favor avísanos con al menos 48 horas de anticipación para que podamos reembolsarte el costo de inscripción o reasignar tu lugar a otra persona.",
+  },
+];
+---
+
+<article
+  class="flex flex-col items-center gap-8 px-4 py-16 bg-[rgb(35_39_47/1)]"
+>
+  <header>
+    <h2 class="text-center text-[#00D5FF] text-4xl font-bold">
+      Preguntas Frecuentes
+    </h2>
+  </header>
+
+  <section class="grid md:grid-cols-2 gap-4 max-w-[1100px]">
+    {
+      faqs.map((faq) => (
+        <details class="w-full bg-white p-4 pl-0  rounded-lg shadow-lg relative overflow-hidden">
+          <summary class="font-bold pl-6 text-[#170F49] flex justify-between items-center gap-4">
+            <span>{faq.question}</span>
+
+            <span class="question-icon p-2 rounded-full flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+              </svg>
+            </span>
+          </summary>
+
+          <p class="pt-4 pl-6 max-w-[500px]">{faq.answer}</p>
+        </details>
+      ))
+    }
+  </section>
+</article>
+
+<style>
+  details {
+    max-height: max-content;
+  }
+
+  details::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    background-color: #00d5ff;
+  }
+
+  summary {
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  details[open] summary .question-icon {
+    transform: rotate(90deg);
+  }
+</style>
