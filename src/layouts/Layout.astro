@@ -1,19 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
+    <title>React & Beyond</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="React & Beyond" />
-    <meta name="og:description" content="React & Beyond" />
-    <meta name="keywords" content="js, bolivia" />
+    <meta
+      name="description"
+      content="Únete al Meetup de JS Bolivia y explora React, React Native y optimización con expertos. Aprende, conecta y potencia tu carrera web."
+    />
+    <meta
+      name="og:description"
+      content="Únete al Meetup de JS Bolivia y explora React, React Native y optimización con expertos. Aprende, conecta y potencia tu carrera web."
+    />
+    <meta
+      name="keywords"
+      content="js, bolivia, react, react compiler, react native ,beyond"
+    />
     <meta name="og:title" content="React & Beyond" />
     <meta name="og:site_name" content="React & Beyond" />
     <meta name="og:image" content="/meta-icon.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>React & Beyond</title>
+
+    <!-- Google Analytics -->
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KLTFPLEGJ2"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KLTFPLEGJ2");
+    </script>
   </head>
   <body>
     <slot />
