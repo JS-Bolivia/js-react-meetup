@@ -94,6 +94,10 @@ const faqs: Faq[] = [
     cursor: pointer;
   }
 
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
   details[open] summary .question-icon {
     transform: rotate(90deg);
   }
