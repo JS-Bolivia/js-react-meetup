@@ -1,0 +1,59 @@
+---
+import Logo from "/src/assets/logo.svg";
+
+const LOGO_JS = Logo.src;
+const LINK_LINKEDIN =
+  "https://www.linkedin.com/company/106485417/admin/dashboard/";
+const LINK_INSTAGRAM = "https://www.instagram.com/js.cochabamba/";
+const LINK_FACEBOOK = "https://www.facebook.com/js.cochabamba?locale=es_LA";
+---
+
+<footer class="bg-white text-gray-700 py-8 md:px-12">
+  <article
+    class="max-w-6xl mx-auto gap-6 flex flex-col justify-center items-center md:justify-between md:flex md:flex-row"
+  >
+    <section>
+      <section class="flex items-center space-x-2">
+        <img src={LOGO_JS} alt="Logo" class="h-8 w-auto" />
+
+        <h2 class="text-lg font-bold">React & Beyond</h2>
+      </section>
+
+      <p class="text-sm mt-2">
+        © 2025 JS Bolivia Community.<br />Todos los derechos reservados.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-8 md:gap-32 md:flex-row">
+      <section class="flex flex-col items-center md:flex md:items-baseline">
+        <h3 class="text-lg font-semibold">Contacto</h3>
+
+        <p class="text-sm">
+          <a href="mailto:jscochabamba@gmail.com">jscochabamba@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="flex flex-col items-center md:flex md:items-baseline">
+        <h3 class="text-lg font-semibold">Social</h3>
+
+        <ul class="text-sm space-y-1">
+          <li>
+            <a href={LINK_LINKEDIN} target="_blank" class="hover:underline"
+              >🔗 LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href={LINK_INSTAGRAM} target="_blank" class="hover:underline"
+              >📸 Instagram</a
+            >
+          </li>
+          <li>
+            <a href={LINK_FACEBOOK} target="_blank" class="hover:underline"
+              >📘 Facebook</a
+            >
+          </li>
+        </ul>
+      </section>
+    </section>
+  </article>
+</footer>
